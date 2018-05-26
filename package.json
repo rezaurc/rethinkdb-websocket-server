@@ -1,27 +1,27 @@
 {
-  "name": "rethinkdb-websocket-server",
-  "version": "0.6.0",
-  "description": "WebSocket server that proxies to a RethinkDB instance. Supports query validation.",
+  "name": "rethinkdb-websocket-server-test",
+  "version": "0.6.1",
+  "description": "WebSocket server that proxies to a RethinkDB instance. DO NOT USE",
   "author": "Mike Mintz",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikemintz/rethinkdb-websocket-server.git"
+    "url": "https://github.com/rezaurc/rethinkdb-websocket-server.git"
   },
   "scripts": {
     "test": "eslint test && mocha --compilers js:babel/register",
-    "prepublish": "eslint src && babel -d dist src"
+    "prepare": "eslint src && babel -d dist src"
   },
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "dependencies": {
-    "bluebird": "^2.9.27",
-    "colors": "^1.1.0",
-    "moment": "^2.10.3",
-    "rethinkdb": "^2.3.0",
-    "ws": "^0.8.0"
+    "bluebird": "^3.5.1",
+    "colors": "^1.2.5",
+    "moment": "^2.22.1",
+    "rethinkdb": "^2.3.3",
+    "ws": "^5.1.1"
   },
   "devDependencies": {
     "babel": "^5.5.6",
